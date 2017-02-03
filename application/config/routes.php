@@ -55,6 +55,7 @@ $route['translate_uri_dashes'] = FALSE;
 
 
 //custom routes
+$route['show/(:num)'] = 'first/gimme/$1';
 $route['sleep'] = 'first/zzz';
 $route['dunno'] = function() {
     $source = '../res/morgan.jpg'; // an image you provide, outside of "oublic"!

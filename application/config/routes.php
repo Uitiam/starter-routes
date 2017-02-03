@@ -52,4 +52,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'welcome';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
+//custom routes
+$route['show/(:num)'] = 'first/gimme/$1';
+$route['comp\d+/\w*'] = 'Wise/bingo';
+$route['sleep'] = 'first/zzz';
+$route['dunno'] = function() {
+    $source = '../res/morgan.jpg'; // an image you provide, outside of "oublic"!
+    header("Content-type: image/jpg");
+    header('Content-Disposition: inline');
+    readfile($source); // dish it
+    die(); // and we don't have to go any further
+    };
+
 $route['lock/:any/:any'] = 'welcome/shucks';

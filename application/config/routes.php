@@ -56,3 +56,10 @@ $route['translate_uri_dashes'] = FALSE;
 
 //custom routes
 $route['sleep'] = 'first/zzz';
+$route['dunno'] = function() {
+    $source = '../res/morgan.jpg'; // an image you provide, outside of "oublic"!
+    header("Content-type: image/jpg");
+    header('Content-Disposition: inline');
+    readfile($source); // dish it
+    die(); // and we don't have to go any further
+    };

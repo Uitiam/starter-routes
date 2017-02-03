@@ -55,6 +55,7 @@ $route['translate_uri_dashes'] = FALSE;
 
 
 //custom routes
+$route['/wise/bingo'] = 'Bingo/index';
 $route['default_controller'] = 'Hogwarts';
 $route['show/(:num)'] = 'first/gimme/$1';
 $route['comp\d+/\w*'] = 'Wise/bingo';

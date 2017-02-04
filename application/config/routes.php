@@ -66,3 +66,4 @@ $route['dunno'] = function() {
     readfile($source); // dish it
     die(); // and we don't have to go any further
     };
+$route['404_override'] = 'Welcome/random';

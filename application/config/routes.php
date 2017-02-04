@@ -55,6 +55,7 @@ $route['translate_uri_dashes'] = FALSE;
 
 
 //custom routes
+$route['/wise/bingo'] = 'Bingo/index';
 $route['show/(:num)'] = 'first/gimme/$1';
 $route['comp\d+/\w*'] = 'Wise/bingo';
 $route['sleep'] = 'first/zzz';

@@ -2,7 +2,7 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Welcome extends Application
+class Hogwarts extends Application
 {
 
 	function __construct()
@@ -19,7 +19,7 @@ class Welcome extends Application
 		$this->data['pagebody'] = 'justone';
 
 		//getting last quote
-		$record = $this->quotes->get(6);
+		$record = $this->quotes->get(5);
 		$this->data = array_merge($this->data, $record);
 
 		$this->render();

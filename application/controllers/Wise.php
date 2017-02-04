@@ -11,11 +11,11 @@ class Wise extends Application
 	public function bingo()
 	{
 		$this->data['pagebody'] = 'justone';
-	
+
 		// getting the fourth quote
 		$record = $this->quotes->get(6);
 		$this->data = array_merge($this->data, $record);
-		
+
 		$this->render();
 	}
 }

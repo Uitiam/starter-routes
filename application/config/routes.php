@@ -55,7 +55,7 @@ $route['translate_uri_dashes'] = FALSE;
 
 
 //custom routes
-$route['lock/:any/:any'] = 'welcome/shucks';
+$route['lock/:any/:any'] = 'Hogwarts/shucks';
 $route['wise/bingo'] = 'Bingo/index';
 $route['default_controller'] = 'Hogwarts';
 $route['show/(:num)'] = 'first/gimme/$1';

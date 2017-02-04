@@ -19,7 +19,7 @@ class Hogwarts extends Application
 		$this->data['pagebody'] = 'justone';
 
 		//getting last quote
-		$record = $this->quotes->get(6);
+		$record = $this->quotes->get(5);
 		$this->data = array_merge($this->data, $record);
 
 		$this->render();

@@ -53,7 +53,6 @@ $route['default_controller'] = 'welcome';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
-
 //custom routes
 $route['lock/:any/:any'] = 'Hogwarts/shucks';
 $route['wise/bingo'] = 'Bingo/index';
